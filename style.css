@@ -1,3 +1,466 @@
-body{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* 
+**************************************
+        HEADER
+**************************************
+*/
+
+header {
+    background-color: #636d79;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+header nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+nav ul li {
+    margin: 1rem;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    display: block;
+    padding: 0 3rem;
+    background-color: transparent;
+    color: white;
+    border: .1px solid white;
+    border-radius: 5px;
+}
+
+.hero-container {
+    margin-top: 3rem;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+
+}
+
+.hero-container .item {
+    width: 50%;
+}
+
+.hero-container h1 {
+    font-size: 3rem;
+}
+
+.hero-container p {
+    margin: 3rem auto;
+    line-height: 2rem;
+}
+
+.hero-container .bottom-button {
+    display: flex;
+    align-items: center;
+
+}
+
+.hero-container .bottom-button button {
+    color: white;
+    background-color: rgb(95, 151, 95);
+    border: none;
+    display: block;
+    padding: .6rem 1rem;
+    margin-left: -95px;
+}
+
+.hero-container .bottom-button i {
+    font-size: 1.2rem;
+    color: black;
+    margin-right: -40px;
+    z-index: 5;
+}
+
+.hero-container input {
+    width: 80%;
+    padding: 1.3rem 3rem;
+    border: none;
+    outline: none;
+}
+
+
+
+/* 
+*************************************
+        NUMBERS
+*************************************
+*/
+
+#numbers {
+    margin-top: 8rem;
+}
+
+#numbers h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 2rem auto 1rem auto;
+}
+
+#numbers .number-container h3 {
+    color: gray;
+}
+
+#numbers .number-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+#numbers .number-image {
+    width: 70%;
+    margin: 5rem auto;
+}
+
+/* 
+**************************************
+            EASY
+**************************************
+*/
+
+#easy {
+    margin-top: 10rem;
+}
+
+#easy h1.heading {
+    margin: 5rem auto;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+#easy .easy-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#easy .item {
+    flex: 40%;
+}
+
+#easy .easy-container h1 {
+    font-size: 2rem;
+    margin: 1rem auto;
+    font-weight: 900;
+}
+
+#easy .easy-container p {
+    margin: 1rem auto;
+    line-height: 2rem;
+    color: gray;
+}
+
+#easy .easy-container button {
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    font-weight: 900;
+    color: white;
+    border: none;
+    background-color: #8bb6a2;
+
+}
+
+/* 
+*******************************************
+        TEAMS
+*******************************************
+*/
+
+#teams {
+    margin-top: 10rem;
+}
+
+#teams .teams-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+#teams .teams-headline .item {
+    width: 50%;
+}
+
+#teams p {
+    line-height: 2rem;
+}
+
+#teams .teams-headline h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#teams .team-members .container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+#teams .team-members .item {
+    flex: 25%;
+}
+
+#teams .team-members .item h2 {
+    margin: 1rem auto;
+}
+
+#teams .team-members button {
+    display: block;
+    padding: 1rem 3rem;
+    margin: 4rem auto;
+    font-weight: 900;
+    color: white;
+    border: none;
+    background-color: #8bb6a2;
+    text-align: center;
+
+}
+
+
+/* 
+*****************************************
+        footer
+*****************************************
+*/
+footer {
+    background-color: #10171d;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+footer .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .1px solid white;
+    padding: 3rem 0;
+}
+
+footer .footer-links .left img {
+    width: 100px;
+}
+
+footer .footer-links .right {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .footer-links .right i {
+    display: block;
+    padding: .9rem;
+    background-color: #272e34;
+    border-radius: 100%;
+}
+
+footer .footer-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-content h4 {
+    font-weight: 900;
+}
+
+footer .footer-content li {
+    color: rgb(175, 175, 175);
+    margin: 1rem auto;
+}
+
+
+
+@media (max-width:700px) {
+
+    .hero-container {
+        display: block;
+
+
+    }
+
+    .hero-container .item {
+        width: 100%;
+    }
+
+    .hero-container h1 {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .hero-container p {
+        margin: 2rem auto;
+        line-height: 2rem;
+    }
+
+
+    .hero-container .bottom-button {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+
+    #numbers h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 2rem auto 1rem auto;
+    }
+
+    #numbers .number-container h3 {
+        font-size: 1rem;
+    }
+
+    #numbers .number-image {
+        width: 100%;
+    }
+
+
+
+    #easy h1.heading {
+        margin: 5rem auto;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    #easy .easy-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #easy .item {
+        flex: 100%;
+    }
+
+    #easy .item-2 {
+        order: -5;
+    }
+
+    #easy .item-1 {
+        order: -4;
+    }
+
+    #easy .item-3 {
+        order: -3;
+    }
+
+    #easy .item-4 {
+        order: -2;
+    }
+
+    #easy .item-6 {
+        order: -1;
+    }
+
+    #easy .item-5 {
+        order: 0;
+    }
+
+    #easy .easy-container h1 {
+        font-size: 2rem;
+        margin: 1rem auto;
+        font-weight: 900;
+    }
+
+    #easy .easy-container p {
+        margin: 1rem auto;
+        line-height: 2rem;
+        color: gray;
+    }
+
+    #easy .easy-container button {
+        padding: 1rem 3rem;
+        margin: 1rem auto;
+        font-weight: 900;
+        color: white;
+        border: none;
+        background-color: #8bb6a2;
+
+    }
+
+
+    #teams .teams-headline {
+        display: block;
+
+    }
+
+    #teams .teams-headline .item {
+        width: 100%;
+    }
+
+    #teams .teams-headline h1 {
+
+        margin-bottom: 1rem;
+    }
+
+    #teams .team-members .container {
+        margin-top: 4rem;
+        display: block;
+
+    }
+
+    #teams .team-members .item {
+
+        margin-bottom: 3rem;
+    }
+
+    #teams .team-members .item h2 {
+        margin: 1rem auto;
+    }
+
+    #teams .team-members button {
+        display: block;
+        padding: 1rem 3rem;
+        margin: 4rem auto;
+        font-weight: 900;
+        color: white;
+        border: none;
+        background-color: #8bb6a2;
+        text-align: center;
+
+    }
+
+
 }
